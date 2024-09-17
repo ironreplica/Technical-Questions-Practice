@@ -4,8 +4,6 @@ var input2 = "({[([)]]})";
 
 function isBalancedBrackets(input) {
   var inputArr = input.split("");
-  console.log(inputArr.length);
-
   for (var i = 0; i <= inputArr.length + 1; i++) {
     if (
       (inputArr[0] == "(" && inputArr[inputArr.length - 1] == ")") ||
@@ -14,7 +12,6 @@ function isBalancedBrackets(input) {
     ) {
       inputArr.splice(0, 1);
       inputArr.splice(inputArr.length - 1, 1);
-      console.log(inputArr.length);
     }
   }
 
